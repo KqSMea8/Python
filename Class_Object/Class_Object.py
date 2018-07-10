@@ -18,25 +18,25 @@
 # In[13]:
 
 
-# s1=Robot()
-# s1.name="Jimmy"
-# s1.color="blue"
-# s1.weight=58
+# r1=Robot()
+# r1.name="Jimmy"
+# r1.color="blue"
+# r1.weight=58
 
-# s2=Robot()
-# s2.name="Ruby"
-# s2.color="white"
-# s2.weight=40
+# r2=Robot()
+# r2.name="Ruby"
+# r2.color="white"
+# r2.weight=40
 
 
 # In[14]:
 
 
-# s1.introduce()
-# s2.introduce()
+# r1.introduce()
+# r2.introduce()
 
 
-# In[15]:
+# In[30]:
 
 
 class Robot:
@@ -48,16 +48,16 @@ class Robot:
         print("My name is " + self.name)
 
 
-# In[28]:
+# In[31]:
 
 
-s1=Robot("Jimmy","blue",58)
-s2=Robot("Ruby","white",40)
+r1=Robot("Jimmy","blue",58)
+r2=Robot("Ruby","white",40)
 
 
-# In[29]:
+# In[32]:
 
 
-s1.introduce()
-s2.introduce()
+r1.introduce()
+r2.introduce()
 
