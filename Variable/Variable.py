@@ -49,6 +49,29 @@ print(y)
 del x
 
 
+# In[15]:
+
+
+x=1;y=2;print(x);print(y)
+
+
+# In[16]:
+
+
+# can't add comment on the right of \
+x=1+  2+  3
+print(x)
+
+
+# In[17]:
+
+
+y=(1+ #can add comment
+   2+
+   3)
+print(y)
+
+
 # In[13]:
 
 
