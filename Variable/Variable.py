@@ -72,7 +72,157 @@ y=(1+ #can add comment
 print(y)
 
 
-# In[13]:
+# In[1]:
+
+
+x=0b111001
+print(x)
+
+
+# In[2]:
+
+
+x=57
+print(bin(x))
+
+
+# In[3]:
+
+
+x=0o57
+print(x)
+
+
+# In[4]:
+
+
+x=47
+print(oct(x))
+
+
+# In[6]:
+
+
+x=0x55
+print(x)
+
+
+# In[8]:
+
+
+x=85
+print(hex(x))
+
+
+# In[9]:
+
+
+x=5.5
+print(x)
+print(type(x))
+
+
+# In[12]:
+
+
+y=int(x)+5
+print(y)
+print(type(y))
+
+
+# In[14]:
+
+
+x=-10
+x=abs(x)
+print(x)
+print(type(x))
+
+
+# In[16]:
+
+
+x=3
+y=4
+z=pow(3,4)
+print(z)
+
+
+# In[17]:
+
+
+x="Hello "
+y="World"
+z=x+y
+print(z)
+
+
+# In[18]:
+
+
+x='''123456789
+1111'''
+print(x)
+
+
+# In[21]:
+
+
+x="I can't do that"
+print(x)
+
+
+# In[22]:
+
+
+x='I can\'t do that'
+print(x)
+
+
+# In[23]:
+
+
+x="I \tcan't do \nthat"
+print(x)
+
+
+# In[24]:
+
+
+x=222
+y=333
+z=str(x)+str(y)
+print(z)
+
+
+# In[25]:
+
+
+x="222"
+y="333"
+z=int(x)+int(y)
+print(z)
+
+
+# In[26]:
+
+
+x="Hi "
+y=x*10
+print(y)
+
+
+# In[27]:
+
+
+x="Hi"
+y="Hello"
+z="How do you do"
+w=x+"\n"+y+"\n"+z
+print(w)
+
+
+# In[28]:
 
 
 # This is comment
