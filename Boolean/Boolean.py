@@ -94,3 +94,21 @@ are_you_sad(True,False)
 
 are_you_sad(True,True)
 
+
+# In[1]:
+
+
+a=True
+b=False
+print(int(True))
+print(int(False))
+
+
+# In[6]:
+
+
+if 1:
+    print("hi")
+elif 0:
+    print("hello")
+
