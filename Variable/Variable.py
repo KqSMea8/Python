@@ -263,6 +263,20 @@ print(x)
 print(str.strip())
 
 
+# In[4]:
+
+
+string="abC"
+dir(string)
+
+
+# In[5]:
+
+
+x=string.islower()
+print(x)
+
+
 # In[28]:
 
 
