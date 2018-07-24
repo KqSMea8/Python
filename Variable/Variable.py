@@ -186,6 +186,14 @@ x="I \tcan't do \nthat"
 print(x)
 
 
+# In[1]:
+
+
+x='''hello hello
+ world'''
+print(x)
+
+
 # In[24]:
 
 
@@ -202,6 +210,18 @@ x="222"
 y="333"
 z=int(x)+int(y)
 print(z)
+
+
+# In[4]:
+
+
+x1=97
+x2=chr(x1)
+print(x2)
+x3=ord(x2)
+print(x3)
+x4='林'
+print(ord(x4))
 
 
 # In[26]:
