@@ -242,6 +242,27 @@ w=x+"\n"+y+"\n"+z
 print(w)
 
 
+# In[1]:
+
+
+str="HelloWorld"
+print(str.upper())
+print(str.lower())
+print(str.title())
+
+
+# In[3]:
+
+
+str=" HelloWorld "
+print(str.lstrip())
+print(str.rstrip())
+x=str.lstrip()
+x=x.rstrip()
+print(x)
+print(str.strip())
+
+
 # In[28]:
 
 
