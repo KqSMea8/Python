@@ -530,3 +530,219 @@ b=['benz', 'bmw']
 a.extend(b)
 print(a)
 
+
+# In[5]:
+
+
+#deep copy
+mysport=['basketball','baseball']
+friendsport=mysport #copy address
+print(mysport)
+print(friendsport)
+print(id(mysport))
+print(id(friendsport))
+mysport.append('football')
+friendsport.append('soccer')
+print(mysport)
+print(friendsport)
+print(id(mysport))
+print(id(friendsport))
+
+
+# In[6]:
+
+
+#shallow copy
+mysport=['basketball','baseball']
+friendsport=mysport[:]
+print(mysport)
+print(friendsport)
+print(id(mysport))
+print(id(friendsport))
+mysport.append('football')
+friendsport.append('soccer')
+print(mysport)
+print(friendsport)
+print(id(mysport))
+print(id(friendsport))
+
+
+# In[7]:
+
+
+string="python"
+string[0]='d'
+
+
+# In[10]:
+
+
+string="python"
+print(string[0])
+print(string[1])
+print(string[2])
+print(string[3])
+print(string[4])
+print(string[5])
+print(string[-1])
+print(string[-2])
+print(string[-3])
+print(string[-4])
+print(string[-5])
+print(string[-6])
+s1,s2,s3,s4,s5,s6=string
+print(s1,s2,s3,s4,s5,s6)
+
+
+# In[11]:
+
+
+string='Deep Learning'
+print(string[0:3])
+print(string[1:4])
+print(string[1:6:2])
+print(string[1:])
+print(string[-3:])
+
+
+# In[16]:
+
+
+string='Deep Learning'
+strlen=len(string)
+strmax=max(string)
+strmin=min(string)
+print(strlen)
+print(strmax)
+print(strmin)
+
+
+# In[20]:
+
+
+string='python'
+x=list(string)
+print(x)
+
+
+# In[24]:
+
+
+x[1:]='hello'
+print(x)
+
+
+# In[26]:
+
+
+str1='Silicon Stone Education'
+str2='DeepDtone'
+str3='深度學習'
+str1list=str1.split()
+str2list=str2.split()
+str3list=str3.split()
+print(str1list)
+print(len(str1list))
+print(str2list)
+print(len(str2list))
+print(str3list)
+print(len(str3list))
+
+
+# In[27]:
+
+
+#in & not in to determine if an object belongs to another object
+password='deepstone'
+ch=input('input:')
+if ch in password:
+    print('belongs to password')
+else:
+    print('not belongs to password')
+if ch not in password:
+    print('not belongs to password')
+else:
+    print('belongs to password')
+
+
+# In[28]:
+
+
+fruits=['apple','banana','pineapple']
+fruit=input('fruit:')
+if fruit in fruits:
+    print('already in fruits')
+else:
+    fruits.append(fruit)
+    print('add into fruits')
+
+
+# In[37]:
+
+
+x=10
+y=10
+z=15
+w=20
+print(id(x),id(y),id(z),id(w))
+z=10
+print(id(x),id(y),id(z),id(w))
+list1=['a','b','c']
+list2=['a','b','c']
+print(id(list1),id(list2)) #list seems not to point to the same address
+str1='abc'
+str2='abc'
+print(id(str1),id(str2))
+
+
+# In[40]:
+
+
+#is & not is to determine if an object has the same address as another object
+x=10
+y=10
+z=15
+w=z-5
+boolvalue=x is y
+print(boolvalue)
+boolvalue=x is z
+print(boolvalue)
+boolvalue=x is w
+print(boolvalue)
+boolvalue=x is not y
+print(boolvalue)
+boolvalue=x is not z
+print(boolvalue)
+boolvalue=x is not w
+print(boolvalue)
+
+
+# In[44]:
+
+
+list1=['a','b','c']
+list2=list1
+list3=list1[:]
+print(id(list1),id(list2),id(list3))
+boolvalue=list1 is list2
+print(boolvalue)
+boolvalue=list1 is list3
+print(boolvalue)
+boolvalue=list1 is not list2
+print(boolvalue)
+boolvalue=list1 is not list3
+print(boolvalue)
+
+
+# In[49]:
+
+
+#enumerate
+drinks=['tea','coffee','wine']
+x=enumerate(drinks)
+print(x) #return an address
+print(type(x))
+print(list(x))
+x=enumerate(drinks,start=10)
+print(list(x))
+
