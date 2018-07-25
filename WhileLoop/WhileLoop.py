@@ -1,6 +1,13 @@
 
 # coding: utf-8
 
+# In[ ]:
+
+
+#while condition
+#    code block
+
+
 # In[2]:
 
 
@@ -25,7 +32,7 @@ while a[i]>0:
 print(sum)
 
 
-# In[5]:
+# In[6]:
 
 
 a=[5,4,4,3,2,1]
