@@ -266,3 +266,144 @@ armys=[soldier0,soldier1,soldier2]
 for army in armys:
     print(army)
 
+
+# In[48]:
+
+
+armys=[]
+for i in range(50):
+    soldier={'tag':'red','score':3,'speed':'slow'}
+    armys.append(soldier)
+for army in armys[:3]:
+    print(army)
+print(len(armys))
+
+
+# In[53]:
+
+
+armys=[]
+for i in range(50):
+    soldier={'tag':'red','score':3,'speed':'slow'}
+    armys.append(soldier)
+for army in armys[:3]:
+    print(army)
+print('============================================')
+for army in armys[35:38]:
+    if army['tag']=='red':
+        army['tag']='blue'
+        army['score']=5
+        army['speed']='fast'
+for army in armys[34:40]:
+    print(army)
+
+
+# In[55]:
+
+
+sports={'Curry':['basketball','football'],'Durant':['baseball'],'James':['football','baseball','basketball']}
+for name,sport in sports.items():
+    print(name)
+    for eachsport in sport:
+        print(eachsport)
+    print()
+
+
+# In[56]:
+
+
+wechat_account={'Curry':{'firstname':'Stephon','lastname':'Curry','city':'Taipei'},'Harden':{'firstname':'James','lastname':'Harden','city':'Tainan'}}
+for account,info in wechat_account.items():
+    print(account)
+    print(info['firstname'])
+    print(info['lastname'])
+    print(info['city'])
+    print()
+
+
+# In[57]:
+
+
+wechat_account={'Curry':{'firstname':'Stephon','lastname':'Curry','city':'Taipei'},'Harden':{'firstname':'James','lastname':'Harden','city':'Tainan'}}
+for account,info in wechat_account.items():
+    print(account)
+    for i in info.values():
+        print(i)
+    print()
+
+
+# In[59]:
+
+
+survey={}
+deter=True
+while deter:
+    name=input('name:')
+    location=input('location:')
+    survey[name]=location
+    repeat=input('repeat(y/n):')
+    if repeat=='n':
+        deter=False
+print(survey)
+
+
+# In[64]:
+
+
+wechat_account={'Curry':{'firstname':'Stephon','lastname':'Curry','city':'Taipei'},'Harden':{'firstname':'James','lastname':'Harden','city':'Tainan'}}
+print(len(wechat_account))
+print(len(wechat_account['Curry']))
+print(len(wechat_account['Harden']))
+x={'apple':'apple'}
+print(len(x['apple']))
+
+
+# In[70]:
+
+
+#########################
+x=['name','city']
+y=dict.fromkeys(x)
+print(y)
+y=dict.fromkeys(x,'Taipei')
+print(y)
+
+
+# In[74]:
+
+
+fruits={'apple':60,'banana':50,'pineapple':90,'watermelon':80}
+x=fruits.get('apple')
+print(x)
+x=fruits.get('grape')
+print(x)
+x=fruits.get('grape',20)
+print(x)
+
+
+# In[78]:
+
+
+fruits={'apple':60,'banana':50,'pineapple':90,'watermelon':80}
+x=fruits.setdefault('apple')
+print(x)
+print(fruits)
+x=fruits.setdefault('grape')
+print(x)
+print(fruits)
+x=fruits.setdefault('hi',100)
+print(x)
+print(fruits)
+
+
+# In[80]:
+
+
+fruits={'apple':60,'banana':50,'pineapple':90,'watermelon':80}
+x=fruits.pop('apple')
+print(x)
+print(fruits)
+x=fruits.pop('grape','does not exist')
+print(x)
+print(fruits)
+
