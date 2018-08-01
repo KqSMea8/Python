@@ -302,3 +302,152 @@ print(x)
 y=A.isdisjoint(C)
 print(y)
 
+
+# In[42]:
+
+
+A={'a','b','c','d','e'}
+B={'q','b','c'}
+C={'a','b','c'}
+x=C.issubset(A)
+print(x)
+y=B.issubset(A)
+print(y)
+
+
+# In[43]:
+
+
+A={'a','b','c','d','e'}
+B={'q','b','c'}
+C={'a','b','c'}
+x=A.issuperset(C)
+print(x)
+y=A.issuperset(B)
+print(y)
+
+
+# In[47]:
+
+
+A={'a','b','c','d'}
+B={'a','k','c'}
+C={'c','f','w'}
+x=A.intersection_update(B)
+print(x)
+print(A)
+print(B)
+x=A.intersection_update(B,C)
+print(x)
+print(A)
+print(B)
+print(C)
+
+
+# In[48]:
+
+
+cars1={'Audi','Ford','Toyota'}
+cars2={'Nissan','Toyota'}
+print(cars1)
+print(cars2)
+cars1.update(cars2)
+print(cars1)
+print(cars2)
+
+
+# In[49]:
+
+
+cars1={'Audi','Ford','Toyota'}
+cars2={'Nissan','Toyota'}
+print(cars1)
+print(cars2)
+cars1.difference_update(cars2)
+print(cars1)
+print(cars2)
+
+
+# In[51]:
+
+
+cars1={'Audi','Ford','Toyota'}
+cars2={'Nissan','Toyota'}
+print(cars1)
+print(cars2)
+cars1.symmetric_difference_update(cars2)
+print(cars1)
+print(cars2)
+
+
+# In[53]:
+
+
+num={1,3,5,9,8,5,6}
+ch={'g','a','b','z'}
+print(max(num))
+print(min(num))
+print(sum(num))
+print(max(ch))
+print(min(ch))
+
+
+# In[55]:
+
+
+num={1,3,5,9,8,5,6}
+x={1,'f456a',(1,2,3)}
+print(len(num))
+print(len(x))
+
+
+# In[57]:
+
+
+cars={'Nissan','Toyota','Ford'}
+carslist=sorted(cars) #list
+carslist1=sorted(cars,reverse=True) #list
+print(carslist)
+print(carslist1)
+
+
+# In[71]:
+
+
+drinks={'coffee','tea','wine'}
+enumerate_drinks=enumerate(drinks)
+print(enumerate_drinks)
+print(type(enumerate_drinks))
+print(list(enumerate_drinks))
+#########################
+#for i in enumerate_drinks:
+   # print(i)
+for i in enumerate(drinks):
+    print(i)
+for i,j in enumerate(drinks):
+    print(i,j)
+
+
+# In[72]:
+
+
+x=frozenset([1,3,5])
+y=frozenset([1,5,9])
+a=x&y
+b=x|y
+c=x-y
+print(x)
+print(y)
+print(a)
+print(b)
+print(c)
+x.add(1)
+
+
+# In[73]:
+
+
+x=set([1,2,3])
+print(x)
+x.append(1)
+
