@@ -131,3 +131,174 @@ physics={'Peter','Jimmy','Tom'}
 diff=math-physics
 print(diff)
 
+
+# In[20]:
+
+
+math={'Kevin','Peter','Eric'}
+physics={'Peter','Jimmy','Tom'}
+diff=math.difference(physics)
+print(diff)
+diff1=physics.difference(math)
+print(diff1)
+
+
+# In[21]:
+
+
+math={'Kevin','Peter','Eric'}
+physics={'Peter','Jimmy','Tom'}
+only=math^physics
+print(only)
+
+
+# In[22]:
+
+
+math={'Kevin','Peter','Eric'}
+physics={'Peter','Jimmy','Tom'}
+only=math.symmetric_difference(physics)
+print(only)
+only1=physics.symmetric_difference(math)
+print(only1)
+
+
+# In[23]:
+
+
+math={'Kevin','Peter','Eric'}
+physics={'Peter','Jimmy','Tom'}
+English={'Kevin','Peter','Eric'}
+print(math==English)
+print(math==physics)
+
+
+# In[24]:
+
+
+math={'Kevin','Peter','Eric'}
+physics={'Peter','Jimmy','Tom'}
+English={'Kevin','Peter','Eric'}
+print(math!=English)
+print(math!=physics)
+
+
+# In[25]:
+
+
+fruit=set('orange')
+print('o'in fruit)
+print('q'in fruit)
+cars={'Nissan','Ford','Toyota'}
+print('Audi'in cars)
+print('Ford'in cars)
+
+
+# In[26]:
+
+
+fruit=set('orange')
+print('o'not in fruit)
+print('q'not in fruit)
+cars={'Nissan','Ford','Toyota'}
+print('Audi'not in cars)
+print('Ford'not in cars)
+
+
+# In[27]:
+
+
+cities={'Taipei','Beijing','Tokyo'}
+print(cities)
+cities.add('Chicago')
+print(cities)
+cities.add('Taipei')
+print(cities)
+cities.add((1,2,3))
+print(cities)
+
+
+# In[32]:
+
+
+x={1,2,3}
+y=x
+y.add(5)
+print(x)
+print(y)
+z=x.copy()
+z.add(100)
+print(x)
+print(z)
+
+
+# In[33]:
+
+
+cities={'Taipei','Beijing','Tokyo'}
+print(cities)
+cities.remove('Beijing')
+print(cities)
+
+
+# In[34]:
+
+
+cities={'Taipei','Beijing','Tokyo'}
+print(cities)
+cities.remove('Tainan')
+print(cities)
+
+
+# In[35]:
+
+
+cities={'Taipei','Beijing','Tokyo'}
+print(cities)
+cities.discard('Beijing')
+print(cities)
+cities.discard('Tainan')
+print(cities)
+
+
+# In[36]:
+
+
+cities={'Taipei','Beijing','Tokyo'}
+print(cities.discard('Beijing'))
+print(cities.discard('Tainan'))
+
+
+# In[37]:
+
+
+cities={'Taipei','Beijing','Tokyo'}
+x=cities.pop()
+print(cities)
+print(x)
+
+
+# In[39]:
+
+
+cities={'Taipei','Beijing','Tokyo'}
+print(cities)
+cities.clear()
+print(cities)
+cities=set()
+print(cities)
+cities.clear()
+print(cities)
+
+
+# In[41]:
+
+
+A={'a','b','c'}
+B={'q','w','e'}
+C={'a','i','o'}
+x=A.isdisjoint(B)
+print(x)
+y=A.isdisjoint(C)
+print(y)
+
