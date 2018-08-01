@@ -79,3 +79,32 @@ def function2(x):
 
 function2(3)
 
+
+# In[14]:
+
+
+def greeting(name):
+    print('Hi!'+name+'. How are you?')
+
+
+# In[16]:
+
+
+greeting('Jimmy')
+
+
+# In[17]:
+
+
+def sub(x,y):
+    return x-y
+
+
+# In[18]:
+
+
+a=int(input('a:'))
+b=int(input('b:'))
+c=sub(a,b)
+print(c)
+
