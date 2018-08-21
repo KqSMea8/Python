@@ -183,3 +183,79 @@ elif x==2:
 else:
     print('error')
 
+
+# In[14]:
+
+
+def op(x,y):
+    a=x+y
+    b=x-y
+    c=x*y
+    d=x/y
+    return a,b,c,d
+a=10
+b=10
+add,sub,mul,div=op(a,b)
+print('add',add)
+print('sub',sub)
+print('mul',mul)
+print('div',div)
+
+
+# In[15]:
+
+
+def greet(name,gender):
+    if gender=='M':
+        x=name+'先生歡迎您'
+    else:
+        x=name+'小姐歡迎您'
+    return x
+name=input('name:')
+gender=input('gender(M/F):')
+x=greet(name,gender)
+print(x)
+
+
+# In[16]:
+
+
+def dic(id,name):
+    x={'id':id,'name':name}
+    return x
+x=dic('a','Jimmy')
+print(x)
+
+
+# In[19]:
+
+
+def dic(id,name,tel=''):
+    x={'id':id,'name':name}
+    if tel:
+        x['tel']=tel
+    return x
+x=dic('a','Jimmy')
+y=dic('b','Tom','123456789')
+print(x)
+print(y)
+
+
+# In[1]:
+
+
+def dic(id,name,tel=''):
+    x={'id':id,'name':name}
+    if tel:
+        x['tel']=tel
+    return x
+while True:
+    id=input('id:')
+    name=input('name:')
+    tel=input('tel:')
+    x=dic(id,name,tel)
+    print(x)
+    repeat=input('Y/N:')
+    if repeat=='N':
+        break
+
