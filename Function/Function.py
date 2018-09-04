@@ -382,3 +382,15 @@ def build(name,age,**player): # **player是可以接受任意數量的關鍵字�
 player_dict=build("James",'32',City='Cleveland',State='Ohio')
 print(player_dict)
 
+
+# In[15]:
+
+
+def factorial(n):
+    if n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+print(factorial(3))
+print(factorial(5))
+
