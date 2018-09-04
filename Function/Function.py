@@ -434,3 +434,72 @@ def defmsg():
     msg1='hi'
 print(msg1)
 
+
+# In[26]:
+
+
+# 匿名函數 1.more arguments 2.one expression 3.return result
+# lambda arg1[, arg2,...argn]:expression
+square=lambda x:x**2
+print(square(10))
+
+
+# In[27]:
+
+
+def square(x):
+    value=x**2
+    return value
+print(square(10))
+
+
+# In[28]:
+
+
+product=lambda x,y:x*y
+print(product(5,10))
+
+
+# In[40]:
+
+
+###############
+def oddfn(x):
+    return x if (x%2==1) else None
+mylist = [5,10,15,20,25,30]
+filter_obj=filter(oddfn,mylist)
+print([item for item in filter_obj])
+
+
+# In[41]:
+
+
+mylist = [5,10,15,20,25,30]
+filter_obj=list(filter(lambda x:(x%2==1),mylist))
+print(filter_obj)
+
+
+# In[43]:
+
+
+mylist = [5,10,15,20,25,30]
+obj=list(map(lambda x:x**2,mylist))
+print(obj)
+
+
+# In[44]:
+
+
+def passfunc ():
+    pass
+
+
+# In[47]:
+
+
+def passfunc ():
+    pass
+print(type(passfunc))
+print(type(lambda x:x))
+print(type(abs))
+
