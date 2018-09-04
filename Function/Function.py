@@ -275,7 +275,7 @@ abc(x)
 # In[4]:
 
 
-def kitchen(unserved,served):
+def kitchen(unserved,served): #函數內和函數外的list是指向同個記憶體位址
     print('廚房處理顧客所點的餐點')
     while unserved:
         current_meal=unserved.pop()
@@ -304,4 +304,81 @@ kitchen(unserved,served)
 print('\n','===廚房處理結束===','\n')
 show_unserved_meal(unserved)
 show_served_meal(served)
+
+
+# In[1]:
+
+
+def kitchen(unserved,served): #利用[:]讓函數外的list不變
+    print('廚房處理顧客所點的餐點')
+    while unserved:
+        current_meal=unserved.pop()
+        print('菜單:',current_meal)
+        served.append(current_meal)
+
+def show_order_meal(unserved):
+    print('===下列是所點的的餐點===')
+    if not unserved:
+        print('***沒有餐點***','\n')
+    for unserved_meal in unserved:
+        print(unserved_meal)
+
+def show_served_meal(served):
+    print('===下列是已經服務的餐點===')
+    if not served:
+        print('***沒有餐點***','\n')
+    for served_meal in served:
+        print(served_meal)    
+
+order_list=['大麥克','勁辣雞腿堡','麥克雞塊']
+served_list=[]
+show_order_meal(order_list)
+show_served_meal(served_list)
+kitchen(order_list[:],served_list)
+print('\n','===廚房處理結束===','\n')
+show_order_meal(order_list)
+show_served_meal(served_list)
+
+
+# In[2]:
+
+
+a=[]
+print(bool(a))
+
+
+# In[5]:
+
+
+def make_icecream(*a): #未知數量的變數
+    for w in a:
+        print(w)
+make_icecream('草莓')
+make_icecream('草莓','藍莓','巧克力')
+
+
+# In[7]:
+
+
+def make_icecream(type,*a): #未知數量的變數
+    print('這是'+type+'冰淇淋')
+    for w in a:
+        print(w)
+    print()
+make_icecream('香草','草莓')
+make_icecream('芒果','草莓','藍莓','巧克力')
+
+
+# In[13]:
+
+
+def build(name,age,**player): # **player是可以接受任意數量的關鍵字參數
+    info={}
+    info['Name']=name
+    info['Age']=age
+    for key,value in player.items():
+        info[key]=value
+    return info
+player_dict=build("James",'32',City='Cleveland',State='Ohio')
+print(player_dict)
 
