@@ -394,3 +394,43 @@ def factorial(n):
 print(factorial(3))
 print(factorial(5))
 
+
+# In[17]:
+
+
+def printmsg():
+    print("函數列印: ",msg)
+msg="global variable"
+print("主程式列印: ",msg)
+printmsg()
+
+
+# In[19]:
+
+
+def printmsg():
+    msg="local variable"
+    print("函數列印: ",msg)
+msg="global variable"
+print("主程式列印: ",msg)
+printmsg()
+print("主程式列印: ",msg)
+
+
+# In[23]:
+
+
+def defmsg():
+    msg1='hi'
+def printing():
+    print(msg1)
+printing()
+
+
+# In[24]:
+
+
+def defmsg():
+    msg1='hi'
+print(msg1)
+
