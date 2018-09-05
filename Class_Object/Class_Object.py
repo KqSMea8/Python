@@ -1,6 +1,12 @@
 
 # coding: utf-8
 
+# In[1]:
+
+
+# class Classname() #類別名稱第一個字母要大寫
+
+
 # In[11]:
 
 
@@ -113,4 +119,30 @@ p2.robot_owned=r2
 
 
 p2.robot_owned.introduce()
+
+
+# In[2]:
+
+
+class Banks():
+    title='Taipei Bank'
+    def motto(self):
+        return '以客為尊'
+userbank=Banks()
+print(userbank.title)
+print(userbank.motto())
+
+
+# In[9]:
+
+
+class Banks():
+    title='Taipei Bank'
+    def __init__(self,uname,money):
+        self.name=uname
+        self.money=money
+    def getmoney(self):
+        return self.money
+userbank=Banks('Jimmy',5000)
+print(userbank.name,userbank.getmoney())
 
